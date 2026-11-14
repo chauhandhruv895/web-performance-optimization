@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+  <title>Web Performance Optimization</title>
+  <!-- Minified CSS -->
+  <style>body{font-family:system-ui,sans-serif;margin:0;padding:2rem;background:#f8f9fa;color:#212529}.container{max-width:960px;margin:0 auto}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}img{width:100%;height:auto;border-radius:8px;display:block}</style>
+</head>
+<body>
+  <main class="container">
+    <h1>Performance Optimized Webpage</h1>
+    <p>Featuring browser caching headers, minified CSS/JS, and lazy-loaded images.</p>
+    <section class="gallery">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Optimized image 1" width="600" height="400" loading="lazy">
+      <img src="https://picsum.photos/id/1016/600/400" alt="Optimized image 2" width="600" height="400" loading="lazy">
+      <img src="https://picsum.photos/id/1018/600/400" alt="Optimized image 3" width="600" height="400" loading="lazy">
+    </section>
+  </main>
+  <!-- Minified JS -->
+  <script defer>document.addEventListener("DOMContentLoaded",()=>{const imgs=document.querySelectorAll('img[loading="lazy"]');console.log("Lazy images:",imgs.length)});</script>
+</body>
+</html>
